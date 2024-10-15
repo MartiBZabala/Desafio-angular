@@ -1,27 +1,24 @@
-# DesafioRickMorty
+# Challenge Técnico: Consumo de API y Paginación con Angular
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+En este desafío técnico, se te pide que consumas la API de Rick and Morty para mostrar datos de personajes, implementar paginación y filtros por nombre utilizando formularios reactivos en Angular.
 
-## Development server
+## Información General
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+La API de Rick and Morty proporciona datos sobre personajes de la serie de televisión Rick and Morty. La API paginará automáticamente las respuestas, proporcionando hasta 20 documentos por página. Cada recurso contiene un objeto de información con detalles sobre la respuesta, como la cantidad de resultados, la cantidad de páginas disponibles, enlaces a la siguiente y anterior página, entre otros.
 
-## Code scaffolding
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Requisitos del Desafío
 
-## Build
+- Consumir la API de Rick and Morty para obtener datos de personajes.
+- Implementar paginación para mostrar hasta 20 personajes por página.
+- Permitir filtrar los personajes por nombre utilizando un formulario reactivo.
+- Mostrar los datos de los personajes, incluyendo su imagen, nombre, estado y especie.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+## Instrucciones y Consideraciones
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+- Se espera que utilices Angular (v14+) para desarrollar la aplicación.
+- Framework Angular Material o Bootstrap.
+- Utiliza formularios reactivos de Angular para implementar el filtro por nombre.
+- Asegúrate de manejar correctamente la paginación para mostrar todos los personajes disponibles.
+- Mantén un código limpio y bien organizado, siguiendo las mejores prácticas de desarrollo Angular.
+- La aplicación debe ser responsiva y fácil de usar.
