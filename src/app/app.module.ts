@@ -7,8 +7,7 @@ import { PersonajeListComponent } from './components/personaje-list/personaje-li
 import { PaginacionComponent } from './components/paginacion/paginacion.component';
 import { PersonajeCardComponent } from './components/personaje-card/personaje-card.component';
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-
+import {  ReactiveFormsModule } from '@angular/forms';
 @NgModule({
   declarations: [
     AppComponent,
@@ -21,7 +20,6 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     AppRoutingModule,
     HttpClientModule,
     ReactiveFormsModule,
-    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

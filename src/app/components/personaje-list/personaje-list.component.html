@@ -1,8 +1,9 @@
 <div class="container">
-  <!-- Título, URL y Descripción -->
+  <!-- Título y Descripción -->
   <div class="header">
     <div class="titulo-container">
-      <img src="https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png" alt="Rick and Morty" class="logo" />
+      <img src="https://1000logos.net/wp-content/uploads/2022/03/Rick-and-Morty.png"
+           alt="Rick and Morty" class="logo" />
     </div>
     <p class="descripcion">
       Explora el fascinante universo de <strong>Rick and Morty</strong>, donde cada personaje tiene su propia historia y peculiaridades.
@@ -10,30 +11,35 @@
     </p>
   </div>
 
-  <form [formGroup]="filterForm">
-    <input formControlName="name" placeholder="¿Qué personaje buscas?" />
+  <!-- Buscador y filtros -->
+  <form [formGroup]="filterForm" class="filter-form">
+    <input formControlName="name" placeholder="¿Qué personaje buscas?" class="input-largo" />
 
-    <select formControlName="status">
-      <option value="">Seleccionar Estado</option>
-      <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
-    </select>
+    <div class="filter-options-container">
+      <select formControlName="status" class="filter-options">
+        <option value="">Seleccionar Estado</option>
+        <option *ngFor="let status of statuses" [value]="status">{{ status }}</option>
+      </select>
 
-    <select formControlName="species">
-      <option value="">Seleccionar Especie</option>
-      <option *ngFor="let species of species" [value]="species">{{ species }}</option>
-    </select>
+      <select formControlName="species" class="filter-options">
+        <option value="">Seleccionar Especie</option>
+        <option *ngFor="let species of species" [value]="species">{{ species }}</option>
+      </select>
+    </div>
   </form>
 
+  <!-- Tarjetas de personajes -->
   <div class="row">
     <app-personaje-card
       *ngFor="let personaje of personaje"
       [personaje]="personaje"
-      class="col-md-3"
+      class="col-md-3 col-sm-6 col-12"
     ></app-personaje-card>
   </div>
 
+  <!-- Paginación -->
   <app-paginacion
     [paginaActual]="page"
-    (cambioDePagina)="onPageChange($event)"
-  ></app-paginacion>
+    (cambioDePagina)="onPageChange($event)">
+  </app-paginacion>
 </div>
