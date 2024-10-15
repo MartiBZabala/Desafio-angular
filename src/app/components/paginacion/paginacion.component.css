@@ -1,0 +1,38 @@
+/* Estilo para el contenedor de paginación */
+.paginacion {
+  display: flex; /* Usar flexbox para alinear elementos */
+  justify-content: center; /* Centrar los elementos */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin-top: 20px; /* Espacio superior */
+}
+
+/* Estilo para los botones de paginación */
+.paginacion button {
+  background-color: #3D9970; /* Color de fondo */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  padding: 10px 15px; /* Espaciado interno */
+  margin: 0 5px; /* Espacio entre botones */
+  font-size: 16px; /* Tamaño de fuente */
+  cursor: pointer; /* Cambiar el cursor al pasar por encima */
+  transition: background-color 0.3s; /* Transición suave para el color de fondo */
+}
+
+/* Efecto hover para los botones */
+.paginacion button:hover {
+  background-color: #2e6e58; /* Color de fondo al pasar el mouse */
+}
+
+/* Deshabilitar el botón anterior en la primera página */
+.paginacion button:disabled {
+  background-color: #cccccc; /* Color gris para botón deshabilitado */
+  cursor: not-allowed; /* Cambiar el cursor para indicar que no se puede hacer clic */
+}
+
+/* Estilo para el texto de la página actual */
+.paginacion span {
+  margin: 0 10px; /* Espacio entre el texto y los botones */
+  font-size: 16px; /* Tamaño de fuente */
+  color: #ffdc00; /* Color de texto amarillo */
+}

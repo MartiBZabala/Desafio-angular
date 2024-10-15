@@ -1,0 +1,9 @@
+<div class="paginacion">
+  <button (click)="paginaAnterior()" [disabled]="paginaActual === 1">
+    Anterior
+  </button>
+  <span>Página {{ paginaActual }}</span>
+  <button (click)="siguientePagina()">
+    Siguiente
+  </button>
+</div>

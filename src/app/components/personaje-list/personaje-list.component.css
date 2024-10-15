@@ -1,0 +1,83 @@
+/* Estilo para el contenedor del encabezado */
+.header {
+  display: flex; /* Usar flexbox para alinear elementos */
+  align-items: center; /* Alinear verticalmente al centro */
+  margin-bottom: 20px; /* Margen inferior */
+}
+
+/* Estilo para el contenedor del título */
+.titulo-container {
+  display: flex; /* Usar flexbox para alinear el logo y la URL */
+  flex-direction: column; /* Colocar elementos en columna */
+  align-items: flex-start; /* Alinear a la izquierda */
+  margin-right: 20px; /* Espacio entre el logo y la descripción */
+}
+
+/* Estilo para el logo */
+.logo {
+  width: 300px; /* Ancho del logo */
+  height: auto; /* Altura automática para mantener la proporción */
+}
+
+/* Estilo para la descripción */
+.descripcion {
+  color: #b6b84b; /* Color de texto blanco */
+  font-size: 1em; /* Tamaño de fuente */
+  flex: 1; /* Tomar el espacio restante */
+}
+
+/* Estilo general del contenedor */
+.container {
+  font-family: 'Comic Sans MS', cursive, sans-serif; /* Tipografía divertida y adecuada */
+  background-color: #001f3f; /* Fondo oscuro */
+  color: #ffdc00; /* Color de texto amarillo */
+  padding: 20px;
+  border-radius: 8px; /* Bordes redondeados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra sutil */
+}
+
+/* Estilo del formulario */
+form {
+  display: flex; /* Usar flexbox para centrar */
+  justify-content: space-between; /* Espacio entre los elementos del formulario */
+  width: 100%; /* Ancho completo del contenedor */
+  margin-bottom: 20px; /* Espacio entre el formulario y la lista de personajes */
+}
+
+/* Estilo de los campos de entrada y selección */
+input, select {
+  background-color: #3D9970; /* Color de fondo verde */
+  border: none; /* Sin borde */
+  color: white; /* Texto blanco */
+  padding: 10px 15px; /* Espaciado interno */
+  margin: 0; /* Sin margen */
+  border-radius: 5px; /* Bordes redondeados */
+  font-size: 16px; /* Tamaño de fuente */
+  flex: 1; /* Ocupa el espacio disponible */
+  margin-right: 10px; /* Espacio entre los elementos */
+}
+
+/* Eliminar el margen derecho del último elemento */
+input:last-child,
+select:last-child {
+  margin-right: 0; /* Sin margen derecho para el último elemento */
+}
+
+
+/* Estilo para cambiar el color del placeholder en el input */
+input::placeholder {
+  color: #d6f18d; /* Color deseado para el placeholder */
+  opacity: 1; /* Asegurarse de que la opacidad esté al máximo */
+}
+
+/* Estilo de las tarjetas de personajes */
+app-personaje-card {
+  margin-bottom: 20px; /* Espacio entre las tarjetas */
+}
+
+/* Estilo de la paginación */
+app-paginacion {
+  display: flex;
+  justify-content: center; /* Centrar la paginación */
+  margin-top: 20px; /* Espacio superior */
+}
