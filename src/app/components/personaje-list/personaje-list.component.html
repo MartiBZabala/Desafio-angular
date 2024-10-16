@@ -35,6 +35,11 @@
       [personaje]="personaje"
       class="col-md-3 col-sm-6 col-12"
     ></app-personaje-card>
+
+    <!-- Mensaje de no resultados -->
+    <div *ngIf="noResults" class="no-results-message text-center">
+      {{ noResults }}
+    </div>
   </div>
 
   <!-- Paginación -->
