@@ -2,8 +2,16 @@
   <button (click)="paginaAnterior()" [disabled]="paginaActual === 1">
     Anterior
   </button>
-  <span>Página {{ paginaActual }}</span>
-  <button (click)="siguientePagina()">
+
+  <ng-container *ngFor="let pagina of paginasVisibles">
+    <button
+      (click)="cambiarPagina(pagina)"
+      [class.activo]="pagina === paginaActual">
+      {{ pagina }}
+    </button>
+  </ng-container>
+
+  <button (click)="siguientePagina()" [disabled]="paginaActual === totalPaginas">
     Siguiente
   </button>
 </div>

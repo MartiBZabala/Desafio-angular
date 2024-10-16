@@ -24,12 +24,12 @@ export class PersonajesService {
   ): Observable<any> {
     let params = new HttpParams().set('page', page); // Param de página es obligatorio.
 
-    // Agregamos filtros solo si se proporcionan.
+    // Filtros
     if (name) params = params.set('name', name);
     if (status) params = params.set('status', status);
     if (species) params = params.set('species', species);
 
-    // Realizamos la petición GET con los parámetros configurados.
+    // Petición GET con los parámetros configurados.
     return this.http.get<any>(this.apiUrl, { params }).pipe(
       catchError((error) => {
         console.error('Error al obtener personajes:', error);

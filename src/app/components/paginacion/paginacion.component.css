@@ -3,31 +3,43 @@
   justify-content: center;
   align-items: center;
   margin-top: 20px;
+  gap: 8px;
+  font-family: 'Press Start 2P', cursive; /* Una tipografía retro divertida */
 }
 
 .paginacion button {
-  background-color: #3D9970;
-  color: white;
-  border: none;
-  border-radius: 5px;
-  padding: 10px 15px;
-  margin: 0 5px;
-  font-size: 16px;
+  background-color: #34eb83; /* Verde Rick */
+  color: #000; /* Texto negro */
+  border: 2px solid #ffdc00; /* Borde amarillo neón */
+  border-radius: 10px;
+  padding: 10px 20px;
+  margin: 0 3px;
+  font-size: 14px;
   cursor: pointer;
-  transition: background-color 0.3s;
+  transition: transform 0.2s, background-color 0.3s;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
 }
 
 .paginacion button:hover {
-  background-color: #2e6e58;
+  background-color: #1fb970; /* Verde más oscuro */
+  transform: scale(1.1); /* Efecto al pasar el mouse */
+}
+
+.paginacion button.activo {
+  background-color: #ffdc00; /* Rosa púrpura estilo Morty */
+  color: #fff;
+  border-color: #ffdc00;
 }
 
 .paginacion button:disabled {
   background-color: #cccccc;
   cursor: not-allowed;
+  transform: none;
 }
 
 .paginacion span {
+  color: #ffdc00; /* Amarillo brillante */
+  font-size: 18px;
   margin: 0 10px;
-  font-size: 16px;
-  color: #ffdc00;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Efecto sombra */
 }
